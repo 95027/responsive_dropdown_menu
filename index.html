@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown-menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <header>
+                <h1 class="nav-title">Menu Bar</h1>
+            </header>
+
+            <input type="checkbox" id="check"/>
+            <label for="check" class="menu-icon">
+                <i class="fa-solid fa-bars active"></i>
+                <i class="fa-solid fa-xmark cancel"></i>
+            </label>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li> 
+                <li class="nav-item nav-show">
+                    <a class="nav-link" href="#">Products&nbsp;<i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="nav-dropdown">
+                        <li class="dropdown-item">
+                            <a href="#" class="dropdown-link">Product 1</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="dropdown-link">Product 2</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="#" class="dropdown-link">Product 3</a>
+                        </li>
+                        <li class="sub-dropdown">
+                            <a href="#" class="dropdown-link">More <i class="fa-solid fa-angle-right"></i> 
+                            </a>
+                            <ul class="sub-nav-dropdown">
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link">Menu 1</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link">Menu 2</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-link">Menu 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li> 
+            </ul>
+        </div>
+    </nav>
+    
+</body>
+</html>
